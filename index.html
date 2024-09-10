@@ -3,12 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .section1{
+            width: 70%;
+            height: 15rem;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: start;
+            
+            gap: 10rem;
+            border: 3px solid black;
+            background: #bdc3c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+        }
+        
+        .prim {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            border-radius: 50%;
+            background-color: #f5f5f5;
+            /* background-color: rgb(5, 5, 5); */
+            flex-direction: row;
+            
+        }
+        .prt{
+            display: flex;
+            text-align: end;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .section2{
+            width:70%;
+            height: 10rem;background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            border: 3px solid black;
+        }
+        .tit{
+            font-size: xx-large;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            margin-left: 5%;
+        }
+        .des{
+            font-size: x-large;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 700;
+            margin-left: 10%;
+        }
+        .section3{
+            width: 70%;
+            height: 15rem;background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            border: 3px solid black;
+        }
+        td,th{
+            font-size: x-large;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .he{
+            text-align: start;
+            margin-left: 5%;
+        }
+        .section4{
+            width: 70%;
+            height: 20rem;background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            text-align: start;
+            flex-direction: column;
+            border: 3px solid black;
+        }
+        li{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            margin: 2rem;
+        }
+        .liti{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        .section5{
+            width: 70%;
+            height: 2rem;background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 50px;
+            border: 3px solid black;
+        }
+        i{
+            font-size: x-large;
+        }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    jj
+    <div class="section1">
+        <div class="prim">
+            <img src="cat.png" alt="error" class="prim">
+        </div>
+        <div class="prt">
+            <h1>AkashKumar S</h1>
+            <h3>ak@email</h3>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="tit">ABOUT ME</div>
+        <p class="des">hi hello na oru nalla paiyan</p>
+    </div>
+    <div class="section3">
+        <h1 class="he">Table</h1>
+        <br>
+        <table class="tb">
+            <tr>
+                <th>dept</th>
+                <th>class</th>
+                <th>name</th>
+            </tr>
+            <tr>
+                <td>IT</td>
+                <td>A</td>
+                <td>AK</td>
+            </tr>
+            <tr>
+                <td>IT</td>
+                <td>A</td>
+                <td>jhhfkhf</td>
+            </tr>
+            <tr>
+                <td>IT</td>
+                <td>A</td>
+                <td>abff</td>
+            </tr>
+        </table>
+    </div>
+    <div class="section4">
+        <h1 class="liti">sports</h1>
+        <ul>
+            <li>MERN</li>
+            <li>Springboot</li>
+            <li>AWS</li>
+            <li>DevOPS</li>
+        </ul>
+    </div>
+    <div class="section5">
+       <a href="tel:+887974564">
+
+           <i class="fa-solid fa-phone"></i>
+       </a>
+       <a href="mailto:ak@gamil">
+
+           <i class="fa-solid fa-envelope"></i>
+       </a>
+       <a href="http://">
+
+           <i class="fa-brands fa-linkedin"></i>
+       </a>
+    </div>
 </body>
 </html>
