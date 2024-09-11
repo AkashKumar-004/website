@@ -27,7 +27,7 @@
             display: flex;
             justify-content: start;
             
-            gap: 10rem;
+            
             border: 3px solid black;
             background: linear-gradient(to right, #2c3e50, #bdc3c7); 
         }
@@ -35,21 +35,22 @@
             color: #f5f5f5;
         }
         .prim {
+            width: 50%;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             text-align: center;
             border-radius: 50%;
-            background-color: #f5f5f5;
-            /* background-color: rgb(5, 5, 5); */
             flex-direction: row;
+        }
+        img{
             background: rgba( 104, 103, 103, 0.2 );
             box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
             backdrop-filter: blur( 6px );
             -webkit-backdrop-filter: blur( 6px );
             border-radius: 50%;
-            border: 1px solid rgba( 255, 255, 255, 0.18 );
         }
         .prt{
+            width: 50%;
             display: flex;
             text-align: end;
             flex-direction: column;
@@ -57,24 +58,30 @@
             align-items: flex-start;
         }
         .section2{
-            width:70%;
-            height: 10rem;background-color: #f5f5f5;
+            width: 70%;
+            height: 50rem;
+            background-color: #f5f5f5;
             display: flex;
-            justify-content: center;
             flex-direction: column;
             border: 3px solid black;
         }
         .tit{
-            font-size: xx-large;
-            font-family: 'Courier New', Courier, monospace;
+            height: 30%;
+            font-size: x-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-weight: bold;
-            margin-left: 5%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            
         }
         .des{
-            font-size: x-large;
-            font-family: 'Courier New', Courier, monospace;
+            font-size: larger;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-weight: 700;
-            margin-left: 10%;
+            display: flex;
+            height: 50%;
+            text-align: justify;
         }
         .section3{
             width: 70%;
@@ -99,11 +106,11 @@
         }
         .he{
             text-align: start;
-            margin-left: 5%;
+            
         }
         .section4{
             width: 70%;
-            height: 20rem;background-color: #f5f5f5;
+            height: 25rem;background-color: #f5f5f5;
             display: flex;
             justify-content: center;
             text-align: start;
@@ -111,7 +118,7 @@
             border: 3px solid black;
         }
         li{
-            font-family: 'Courier New', Courier, monospace;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-weight: bold;
             margin: 2rem;
         }
@@ -204,55 +211,54 @@
 <body>
     <div class="section1">
         <div class="prim">
-            <img src="cat.png" alt="error" class="prim">
+            <img src="cat.png" alt="error" >
         </div>
         <div class="prt">
             <h1>AkashKumar S</h1>
-            <h3>ak@email</h3>
+            <h3>akashkumars22it@srishakthi.ac.in</h3>
         </div>
     </div>
     <div class="section2">
         <div class="tit">ABOUT ME</div>
-        <p class="des">hi hello everyone</p>
+        <p class="des">I'm currently pursuing Third-year IT student and proficient in the MERN stack and Spring framework, with a strong focus on data structures and algorithms. Demonstrates a commitment to mastering key technologies and enhancing problem-solving skills. Eager to apply knowledge and drive innovation in a dynamic software development environment.</p>
     </div>
     <div class="section3">
         <h1 class="he">Table</h1>
         <br>
         <table class="tb">
             <tr>
-                <th>dept</th>
-                <th>class</th>
-                <th>name</th>
+                <th>DEGREE</th>
+                <th>CAMPUS</th>
+                <th>SCORE</th>
             </tr>
             <tr>
-                <td>IT</td>
-                <td>A</td>
-                <td>AK</td>
+                <td>HIGH SCHOOL</td>
+                <td>HIGHER SECONDARY</td>
+                <td>COLLEGE</td>
             </tr>
             <tr>
-                <td>IT</td>
-                <td>A</td>
-                <td>jhhfkhf</td>
+                <td>RKV</td>
+                <td>RKV</td>
+                <td>SIET</td>
             </tr>
             <tr>
-                <td>IT</td>
-                <td>A</td>
-                <td>abff</td>
+                <td>90</td>
+                <td>92</td>
+                <td>85</td>
             </tr>
         </table>
     </div>
     <div class="section4">
-        <h1 class="liti">framework</h1>
+        <h1 class="liti">SKILLS</h1>
         <ul>
-            <li>MERN</li>
-            <li>Springboot</li>
-            <li>AWS</li>
+            <li>Spring Boot: Proficient in building and deploying Java-based applications with Spring Boot.</li>
+            <li>MERN Stack: Experienced with MongoDB, Express.js, React, and Node.js for full-stack development.</li>
+            <li>Data Structures & Algorithms (DSA): Strong problem-solving skills with a focus on efficient algorithm design and optimization.</li>
+            <li>Version Control: Skilled in using Git for version control and collaborative development.
+                Problem Solving: Adept at analyzing and resolving complex technical challenges.
+                Leadership Qualities: Demonstrated ability to lead projects and collaborate effectively in team environments</li>
         </ul>
     </div>
-    </div>
-    <div class="section6">
-      <button class="button"> Button</h1>
-      </button>
     </div>
     <div class="section5">
        <a href="tel:+887974564">
@@ -268,33 +274,5 @@
            <i class="fa-brands fa-linkedin"></i>
        </a>
     </div>
-    <script>
-        let num=10;
-        let string="hi";
-        let boolean=false;
-        let nullval=null;
-        let undefinedvalue=undefined;
-        console.log(num+" "+string+" "+boolean+" "+nullval+" "+undefinedvalue)
-        console.log(num);
-        console.log(string)
-        console.log(boolean)
-        console.log(nullval)
-        console.log(undefinedvalue)
-        let datajs={
-            name:"AK",
-            phone:69,
-            alive:"Yes"
-        }
-        let datajson={
-            "name":"AK",
-            "Ph":2334,
-            "alive":"yes"
-        }
-        console.log(datajs)
-        console.log(datajson)
-        let dar=[datajs,datajson,"hi",90]
-        console.log(dar)
-
-    </script>
 </body>
 </html>
