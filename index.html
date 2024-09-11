@@ -13,6 +13,8 @@
             flex-direction: column;
             justify-content: start;
             align-items: center;
+            border-radius: 10%;
+            overflow-x: hidden;
         }
         *{
             margin: 0px;
@@ -27,12 +29,11 @@
             
             gap: 10rem;
             border: 3px solid black;
-            background: #bdc3c7;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+            background: linear-gradient(to right, #2c3e50, #bdc3c7); 
         }
-        
+        a{
+            color: #f5f5f5;
+        }
         .prim {
             display: flex;
             justify-content: space-between;
@@ -41,7 +42,12 @@ background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, F
             background-color: #f5f5f5;
             /* background-color: rgb(5, 5, 5); */
             flex-direction: row;
-            
+            background: rgba( 104, 103, 103, 0.2 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 6px );
+            -webkit-backdrop-filter: blur( 6px );
+            border-radius: 50%;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
         }
         .prt{
             display: flex;
@@ -79,16 +85,17 @@ background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, F
             flex-direction: column;
             border: 3px solid black;
         }
-        td,th{
+        td,th,table{
+            
             font-size: x-large;
             font-family: 'Courier New', Courier, monospace;
             font-weight: bold;
             border: 1px solid black;
             border-collapse: collapse;
         }
-        table{
+        .tb{
             border: 1px solid black;
-            border-collapse: collapse;
+            /* border-collapse: collapse; */
         }
         .he{
             text-align: start;
@@ -109,20 +116,87 @@ background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, F
             margin: 2rem;
         }
         .liti{
+            width: 70%;
             font-family: 'Courier New', Courier, monospace;
             font-weight: bold;
         }
         .section5{
             width: 70%;
-            height: 2rem;background-color: #f5f5f5;
+            height: 3rem;background-color: #f5f5f5;
             display: flex;
             justify-content: center;
             align-items: flex-end;
             gap: 50px;
             border: 3px solid black;
+            background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         }
         i{
             font-size: x-large;
+        }
+        
+        *::-webkit-scrollbar-track
+        {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            background-color: #F5F5F5;
+            border-radius: 10px;
+        }
+        
+        *::-webkit-scrollbar
+        {
+            width: 10px;
+        background-color: #F5F5F5;
+        }
+    
+    *::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        background-image: -webkit-gradient(linear,
+        left bottom,
+        left top,
+        color-stop(0.44, rgb(122,153,217)),
+        color-stop(0.72, rgb(73,125,189)),
+        color-stop(0.86, rgb(28,58,148)));
+        }
+
+        button {
+            width: 9em;
+            height: 3em;
+            border-radius: 30em;
+            font-size: 15px;
+            font-family: inherit;
+            border: none;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        box-shadow: 6px 6px 12px #c5c5c5,
+                    -6px -6px 12px #ffffff;
+        }
+        button::before {
+        content: '';
+        width: 0;
+        height: 3em;
+        border-radius: 30em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+        transition: .5s ease;
+        display: block;
+        z-index: -1;
+    }
+    
+        button:hover::before {
+            width: 9em;
+        }
+        .section6{
+            width: 70%;
+            height: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid black;
+            border-collapse: collapse;
+            
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -174,6 +248,11 @@ background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, F
             <li>Springboot</li>
             <li>AWS</li>
         </ul>
+    </div>
+    </div>
+    <div class="section6">
+      <button class="button"> Button</h1>
+      </button>
     </div>
     <div class="section5">
        <a href="tel:+887974564">
