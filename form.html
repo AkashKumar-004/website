@@ -81,6 +81,7 @@
             <input type="email" id="email">
             <input type="number" id="number">
             <input type="password" id="password">
+            <input type="age" id="age">
             <button type="submit" class="sub">submit</button>
         </form>
     </div>
@@ -92,7 +93,26 @@
             let email=document.getElementById("email").value;
             let number=document.getElementById("number").value;
             let password=document.getElementById("password").value;
-            console.log(name)
+            let age=document.getElementById("age").value;
+            const data={
+                n:name,
+                em:email,
+                nu:number,
+                pass:password,
+               usertype : age >=18 ? 'ok':'no'
+            }
+            if(name!=" " && email!=" "&&number!=0 && password!=" ")
+            {
+                if(name==="aka"|| email==="ak@gamil")
+                console.log("not availabe");
+            }
+            else
+            {
+                console.log("fill the columns")
+            }
+            const{n,em,nu,pass,usertype}=data
+            console.log(n);
+
         }
     </script>
 </html>
