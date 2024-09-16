@@ -57,8 +57,8 @@ async function API(){
     async function apidata() {
         const apidat1a=await API();
         // console.log(apidat1a)
-        const active=apidat1a.filter(data =>data.isActive)
-        const da=active.map((data)=>{console.log(data)})
-         const dd=apidat1a.map((data)=>{console.log(data)})
+        const active=apidat1a.filter(data =>data.ifActive)
+        const da=active.map((data)=>{console. table(data)})
+        //  const dd=apidat1a.map((data)=>{console.log(data)})
     }
     apidata();
